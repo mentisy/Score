@@ -131,8 +131,6 @@ var App = {
 
     Disable: {
 
-        handler: undefined,
-
         temporary: function() {
 
             App.Disable.disable();
