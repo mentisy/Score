@@ -1,27 +1,24 @@
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
-.idea/* # JetBrains, aka PHPStorm, IntelliJ IDEA
-.idea* # JetBrains, aka PHPStorm, IntelliJ IDEA
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Tool specific files #
-#######################
-*~ # vim
-*.swp # vim
-*.swo # vim
-*.sublime-* # sublime text
-*.tmlanguage.cache # sublime text & textmate
-*.tmPreferences.cache # sublime text & textmate
-*.stTheme.cache # cache files for sublime text
-.settings/* # Eclipse
-.idea/* # JetBrains, aka PHPStorm, IntelliJ IDEA
-nbproject/* # NetBeans
-.vscode # Visual Studio Code
-.sass-cache/ # Sass preprocessor
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.idea

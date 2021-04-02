@@ -1,0 +1,137 @@
+:root {
+    --blue: #007bff;
+    --blue-hover: #0069d9;
+    --red: #dc3545;
+    --red-hover: #c82333;
+    --black: #343a40;
+    --black-hover: #27292d;
+    --yellow: #ffc107;
+    --yellow-hover: #ecb306;
+}
+
+main {
+    max-width: 450px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 500;
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+section.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    flex-grow: 1;
+}
+
+.score {
+    outline: none;
+}
+
+.score-separator {
+    margin: 0 1rem;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+    margin: 0 1rem;
+}
+
+footer {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    margin: 1rem;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: .5rem .75rem;
+    background-color: var(--blue);
+    color: #fff;
+    outline: none;
+    font-size: 1.05rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button:hover, .blue:hover, .button:focus, .blue:focus {
+    background-color: var(--blue-hover);
+}
+
+.button-reset, .red {
+    background-color: var(--red);
+}
+
+.button-reset:hover, .red:hover, .button-reset:focus, .red:focus {
+    background-color: var(--red-hover);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.black:hover, .black:focus {
+    background-color: var(--black-hover);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.yellow:hover, .yellow:focus {
+    background-color: var(--yellow-hover);
+}
+
+@media (max-width: 370px) {
+    .score-separator {
+        margin: 0 .5rem;
+    }
+    .button {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        margin: 1rem;
+    }
+    .score-separator {
+        margin: 0;
+    }
+    .button {
+        font-size: .7rem;
+    }
+}
